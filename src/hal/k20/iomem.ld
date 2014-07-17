@@ -144,8 +144,11 @@ k20_iomem_ADC1      = 0x400BB000;
 
 k20_iomem_DAC0      = 0x400CC000;
 
+
 k20_iomem_GPIOA     = 0x400ff000;
 k20_iomem_GPIOB     = 0x400ff040;
 k20_iomem_GPIOC     = 0x400ff080;
 k20_iomem_GPIOD     = 0x400ff0C0;
 k20_iomem_GPIOE     = 0x400ff100;
+
+k20_iomem_WDOG = 0x40052000;
