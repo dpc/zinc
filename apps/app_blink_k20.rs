@@ -52,7 +52,7 @@ mod reg {
     },
 
     0xe => reg16 unlock {
-      0..15 => unlock
+      0..15 => unlock: wo
         // TODO: Make this work; ioreg macro fails here: 
         /*{
           0xc520 => Seq1,
