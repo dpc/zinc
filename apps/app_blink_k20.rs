@@ -35,7 +35,7 @@ pub unsafe fn main() {
   watchdog::init(watchdog::Disabled);
 
   // Pins for MC HCK (http://www.mchck.org/)
-  let led1 = pin::Pin::new(pin::PortB, 16, pin::GPIO, Some(zinc::hal::pin::Out));
+  let led1 = pin::Pin::new(pin::PortC, 5, pin::GPIO, Some(zinc::hal::pin::Out));
 
   systick::setup(systick::Fallback(480000));
   systick::enable();
