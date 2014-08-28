@@ -43,21 +43,19 @@ mod reg {
     },
 
     0xc => reg16 refresh {
-      0..15 => refresh
-        // TODO: Make this work
-        /*{
-          0xa602 => Seq1,
-          0xb480 => Seq2,
-          }*/,
+      0..15 => refresh: wo
+      {
+        0xa602 => Seq1,
+        0xb480 => Seq2,
+      },
     },
 
     0xe => reg16 unlock {
       0..15 => unlock: wo
-        // TODO: Make this work; ioreg macro fails here: 
-        /*{
-          0xc520 => Seq1,
-          0xd928 => Seq2,
-          }*/,
+      {
+        0xc520 => Seq1,
+        0xd928 => Seq2,
+      },
     },
 
   })
